@@ -4,6 +4,8 @@
 # @FileName: function_tool.py
 # @Software: PyCharm
 # @Affiliation: tfswufe.edu.cn
+from __future__ import annotations
+
 import json
 from typing import List, Tuple, Callable
 

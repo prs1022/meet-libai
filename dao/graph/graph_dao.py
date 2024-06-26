@@ -4,6 +4,8 @@
 # @FileName: graph_dao.py
 # @Software: PyCharm
 # @Affiliation: tfswufe.edu.cn
+from __future__ import annotations
+
 from datetime import datetime
 from pathlib import Path
 from typing import Sequence, Set

@@ -4,16 +4,14 @@
 # @FileName: answer.py
 # @Software: PyCharm
 # @Affiliation: tfswufe.edu.cn
-from typing import Tuple, List, Any
+from typing import Tuple, List, Any, Union
 
-from dao.graph.graph_dao import GraphDao
 from qa.function_tool import map_question_to_function, map_question_to_function_args
-
 from qa.question_parser import parse_question, check_entity, QuestionType
 
 
 def get_answer(question: str,
-               history: List[List | None] = None) -> (
+               history: List[Union[List, None]] = None) -> (
         Tuple[Any, QuestionType]):
     """
     根据问题获取答案或者完成任务
